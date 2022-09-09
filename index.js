@@ -1,5 +1,5 @@
 import React, { memo, useState, useEffect, useCallback, useMemo, useRef } from 'react';
-import { Animated, PanResponder, View, ViewPropTypes } from 'react-native';
+import { Animated, PanResponder, View } from 'react-native';
 import PropTypes from 'prop-types';
 
 import styles from './styles';
@@ -202,7 +202,6 @@ const Slider = (
 };
 
 Slider.propTypes = {
-  ...ViewPropTypes,
   min: PropTypes.number.isRequired,
   max: PropTypes.number.isRequired,
   minRange: PropTypes.number,
